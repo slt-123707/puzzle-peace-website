@@ -1,0 +1,8 @@
+# robots.txt — Puzzle Peace ADHD Coaching
+# Replace [your-domain] with your actual domain once live
+
+User-agent: *
+Allow: /
+Disallow:
+
+Sitemap: https://[your-domain]/sitemap.xml
