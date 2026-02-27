@@ -29,6 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* --- Mobile: swap "Book a call" buttons to tel: link --- */
+  if (window.innerWidth <= 768) {
+    document.querySelectorAll('a.btn').forEach(btn => {
+      if (btn.textContent.trim() === 'Book a call') {
+        btn.href = 'tel:+447588595511';
+      }
+    });
+  }
+
   /* --- Highlight active nav link based on current page --- */
   const page = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(link => {
